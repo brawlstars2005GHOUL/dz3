@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artem Asaturov</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="dwayne">
+            <h1>Welcome to my site</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illo laboriosam velit, reprehenderit
+                ducimus dignissimos unde earum rem asperiores quisquam architecto nihil quas fugit incidunt commodi
+                accusantium adipisci. Tenetur, vitae ipsum molestiae assumenda sint aut necessitatibus aliquid veritatis
+                culpa in saepe nobis eveniet, quasi harum ullam optio esse, explicabo quidem.</p>
+            <div class="dwayne__buttons">
+                <button class="main-button" onclick="openModal()">Sign up</button>
+                <button class="main-button2" onclick="openModal2()">Sign in</button>
+            </div>
+        </div>
+    </div>
+    <div id="layer"></div>
+    <div id="modal">
+        <h2 class="modal__h2">Registration</h2>
+        <form>
+            <div class="input-block">
+                <input type="text" placeholder="First name">
+            </div>
+            <div class="input-block">
+                <input type="text" placeholder="Last name">
+            </div>
+            <div class="input-block">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-block">
+                <input type="text" placeholder="Nickname">
+            </div>
+            <div class="input-block">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="input-block">
+                <input type="password" placeholder="Confirm password">
+            </div>
+            <button class="green-button">Sign Up</button>
+        </form>
+        <button class="red-button" onclick="closeModal()">close</button>
+    </div>
+
+    <div id="layer2"></div>
+    <div id="modal2">
+        <h2 class="modal__h2">Sign In</h2>
+        <form>
+            <div class="input-block">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-block">
+                <input type="password" placeholder="Password">
+            </div>
+            <button class="green-button">Sign In</button>
+        </form>
+        <button class="red-button" onclick="closeModal2()">close</button>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
